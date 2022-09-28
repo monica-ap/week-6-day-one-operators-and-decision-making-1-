@@ -14,14 +14,17 @@
 
 seconds = [1.23, 1.45, 1.02]
 current = 1.11
-
+seconds.append(current)
+print(seconds)
 # Remove item 1.45 from seconds.
 seconds = [1.23, 1.45, 1.02, 1.11]
-
-
+seconds.remove(1.45)
+print(seconds)
 # Remove items 1.45, 1.02, and 1.11 from seconds.
 seconds = [1.23, 1.45, 1.02, 1.11]
-
+seconds.remove(1.45)
+seconds.remove(1.02)
+seconds.remove(1.11)
 
 ################################comparison operators#########################
 #remember....
@@ -31,13 +34,31 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # <= less or equal
 # == equal
 # != different or not equal to
+my_bool=10 == 25
+print(my_bool)#false
 
+my_bool=5+5==10-0
+print(my_bool)#true
 
+my_bool='white'=="White".lower()
+print(my_bool)
 
+my_bool= 4<5 and 5>=6
+print(my_bool)#true
 
+my_bool = (55==55) and (5==2+3)
+print(my_bool)
+
+text= "this sentence is short"
+#my_bool = ('sentence'in text)and ('short' in text)
+my_bool = ('sentence' in text) or ('python' in text)
+print(my_bool)
 # Comparison Operators Practice  1:
 # Create two variables (num1 and num2) with the following values: 36 and 17. Check if num1 is greater than or equal to num2 and store the result of that comparison in a variable called my_bool
-
+num1= 36
+num2=17
+my_bool= num1>=num2
+print(my_bool)
 
 
 # Comparison Operators Practice  2:
@@ -45,15 +66,19 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # Inside num1, store the result of the square root of 25
 # Inside num2, store the number 5.
 # Check if num1 is equal to num2 and store the result of that comparison in a variable called my_bool.
-
-
+num1=5
+num2=5
+my_bool= num1==num2
+print(my_bool)
 # Comparison Operators Practice #3:
 # Create two variables (num1 and num2):
 
 # Inside num1, store the result of 64 x 3
-
+num1=64*3
+num2=24*8
+my_bool= num1==num2
+print(my_bool)
 # Inside num2, store the result of 24 x 8
-
 # Check if num1 is different from num2 and store the result of that comparison in a variable called my_bool.
 
 
@@ -69,11 +94,11 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # Create three variables (num1, num2, and num3):
 
 # Inside num1, store the value 36
-
+num1=36
 # Inside num2, stores the result of the operation 72/2
-
+num2= 72/2
 # Inside num3, store the value 48
-
+num3=48
 # Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
 
 
@@ -101,9 +126,9 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 
 # are not found in the sentence below, and store the result (a boolean) in a variable called my_bool:
 
-# "When something is important enough, you do it even if the odds are against you" - Elon Musk
-
-
+text = "When something is important enough, you do it even if the odds are against you - Elon Musk"
+my_bool = ("word" in text)and('word2'in text)
+print(my_bool)
 
 
 
