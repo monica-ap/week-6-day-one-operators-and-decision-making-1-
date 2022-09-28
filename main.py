@@ -134,8 +134,19 @@ print(my_bool)
 
 ########################################decision making in python#####################################
 
+#lesson
+#if 5==2:
+#  print("it is correct")
+#else:
+#  print("it is not correct")
 
-
+pet='rabbit'
+if pet=='cat':
+  print("you have a cat")
+elif pet=='dog':
+  print("you have a dog")
+else:
+  print("i don't know what animal you have")
 # Decision Making Practice #1
 # Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
 
